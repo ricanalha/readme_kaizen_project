@@ -82,3 +82,51 @@ Principais configurações:
     "tabWidth": 2,
     "endOfLine": "lf"
   }
+
+### Git
+
+- **.gitattributes** força o **end-of-line** como **LF** para consistência entre sistemas operacionais.
+
+
+## 🚀 Scripts Disponíveis
+
+| Script | Descrição |
+|--------|-------|
+| `npm run dev` | Inicia o servidor de desenvolvimento Vite. |
+| `npm run build` | Compila a aplicação para produção. |
+| `npm run preview` | Roda uma versão de preview do build. |
+| `npm run lint` | Executa o ESLint para verificar problemas. |
+| `npm run lint:fix` | Executa ESLint e corrige problemas automaticamente. |
+| `npm run format` | Formata todo o código com Prettier. |
+| `npm run prepare` | Inicializa hooks do Husky. |
+
+### Lint-staged
+
+Antes de qualquer commit, arquivos selecionados são automaticamente verificados:
+
+    ```json
+    {
+        "*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
+        "*{css,md,json}": ["npm run format"]
+    }
+
+## 🖌️ Convenções de Código
+
+- **Imports absolutos**  
+  Use `@/` para importar arquivos dentro de `src/`.
+
+- **Componentes**  
+  - Funções escritas com `React.FC` ou `function`.  
+  - Variantes de componentes (como botões) são gerenciadas via `class-variance-authority`.
+
+- **TailwindCSS**  
+  - Evite duplicar classes.  
+  - Use `tailwind-merge` para combinar classes dinamicamente.
+
+- **React Fast Refresh**  
+  - Cada arquivo deve **exportar apenas componentes React**.  
+  - Constantes auxiliares devem ficar em arquivos separados.
+
+- **Acessibilidade**  
+  - Sempre use `alt` em imagens.  
+  - Evite `<a>` sem `href` válido.
