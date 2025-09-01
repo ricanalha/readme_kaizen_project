@@ -87,6 +87,16 @@ Principais configurações:
 
 - **.gitattributes** força o **end-of-line** como **LF** para consistência entre sistemas operacionais.
 
+## 🧹 Lint-staged
+
+Antes de qualquer commit, arquivos selecionados são automaticamente verificados e corrigidos:
+
+```json
+{
+    "*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
+    "*{css,md,json}": ["npm run format"]
+}
+```
 
 ## 🚀 Scripts Disponíveis
 
@@ -138,12 +148,53 @@ Principais configurações:
 - [Radix UI](https://www.radix-ui.com/)  
 - [Lucide Icons](https://lucide.dev/)  
 
-## 🧹 Lint-staged
+## 🚀 Como Baixar e Rodar o Projeto
 
-Antes de qualquer commit, arquivos selecionados são automaticamente verificados e corrigidos:
+Siga os passos abaixo para configurar o template **Canhoto** no seu ambiente local:
 
-```json
-{
-    "*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
-    "*{css,md,json}": ["npm run format"]
-}
+### 1. Clonar o repositório
+
+```bash
+git clone <URL_DO_REPOSITORIO>
+cd <NOME_DA_PASTA_DO_PROJETO>
+```
+
+### 2. Instalar Dependências
+
+O projeto utiliza **npm** como gerenciador de pacotes. Para instalar todas as dependências, execute:
+
+```bash
+npm install
+```
+
+### 3. Rodar em Modo Desenvolvimento  <-- Isso está sendo lido como parte do código
+Para iniciar o servidor de desenvolvimento com **Vite**, execute o comando abaixo:
+
+```bash
+npm run dev
+```
+
+### 4. Build para produção
+
+Para gerar o build otimizado para produção:
+
+```bash
+npm run build
+```
+
+Isso criará os arquivos na pasta **dist/**.
+
+Para testar o build localmente:
+
+```bash
+npm run preview
+```
+
+### 5. Lint e Formatação
+
+Antes de enviar código para o repositório, recomenda-se rodar:
+
+```bash
+npm run format 
+npm run lint:fix
+```
