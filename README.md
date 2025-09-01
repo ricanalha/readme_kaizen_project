@@ -105,8 +105,10 @@ Principais configurações:
 Antes de qualquer commit, arquivos selecionados são automaticamente verificados e corrigidos:
 
 ```json
+{
 "*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
 "*{css,md,json}": ["npm run format"]
+}
 
 ## 🖌️ Convenções de Código
 
