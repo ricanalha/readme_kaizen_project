@@ -100,33 +100,47 @@ Principais configurações:
 | `npm run format` | Formata todo o código com Prettier. |
 | `npm run prepare` | Inicializa hooks do Husky. |
 
-### Lint-staged
+## 🧹 Lint-staged
 
-Antes de qualquer commit, arquivos selecionados são automaticamente verificados:
+Antes de qualquer commit, arquivos selecionados são automaticamente verificados e corrigidos:
 
-    ```json
-    {
-        "*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
-        "*{css,md,json}": ["npm run format"]
-    }
+```json
+"*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
+"*{css,md,json}": ["npm run format"]
 
 ## 🖌️ Convenções de Código
 
 - **Imports absolutos**  
   Use `@/` para importar arquivos dentro de `src/`.
-
 - **Componentes**  
   - Funções escritas com `React.FC` ou `function`.  
   - Variantes de componentes (como botões) são gerenciadas via `class-variance-authority`.
-
 - **TailwindCSS**  
   - Evite duplicar classes.  
   - Use `tailwind-merge` para combinar classes dinamicamente.
-
 - **React Fast Refresh**  
   - Cada arquivo deve **exportar apenas componentes React**.  
   - Constantes auxiliares devem ficar em arquivos separados.
-
 - **Acessibilidade**  
   - Sempre use `alt` em imagens.  
   - Evite `<a>` sem `href` válido.
+
+## 📌 Boas Práticas Recomendadas
+
+1. Usar **TypeScript** estrito e tipar funções, estados e props.  
+2. Evitar `any` e variáveis não utilizadas.  
+3. Manter **importações organizadas** e código consistente.  
+4. Escrever **componentes reutilizáveis** e **hooks** sempre que possível.  
+5. Revisar regras do **ESLint** antes de commits.  
+6. Reutilizar componentes e hooks para manter consistência.
+
+---
+
+## 📖 Links Úteis
+
+- [React Docs](https://reactjs.org/)  
+- [TypeScript Docs](https://www.typescriptlang.org/)  
+- [Vite Docs](https://vitejs.dev/)  
+- [TailwindCSS Docs](https://tailwindcss.com/)  
+- [Radix UI](https://www.radix-ui.com/)  
+- [Lucide Icons](https://lucide.dev/)  
