@@ -100,15 +100,6 @@ Principais configurações:
 | `npm run format` | Formata todo o código com Prettier. |
 | `npm run prepare` | Inicializa hooks do Husky. |
 
-## 🧹 Lint-staged
-
-Antes de qualquer commit, arquivos selecionados são automaticamente verificados e corrigidos:
-
-```json
-{
-"*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
-"*{css,md,json}": ["npm run format"]
-}
 
 ## 🖌️ Convenções de Código
 
@@ -146,3 +137,13 @@ Antes de qualquer commit, arquivos selecionados são automaticamente verificados
 - [TailwindCSS Docs](https://tailwindcss.com/)  
 - [Radix UI](https://www.radix-ui.com/)  
 - [Lucide Icons](https://lucide.dev/)  
+
+## 🧹 Lint-staged
+
+Antes de qualquer commit, arquivos selecionados são automaticamente verificados e corrigidos:
+
+```json
+{
+    "*{js,jsx,ts,tsx}": ["npm run format", "npm run lint:fix"],
+    "*{css,md,json}": ["npm run format"]
+}
