@@ -128,25 +128,6 @@ Antes de qualquer commit, arquivos selecionados são automaticamente verificados
   - Sempre use `alt` em imagens.  
   - Evite `<a>` sem `href` válido.
 
-## 📌 Boas Práticas Recomendadas
-
-1. Usar **TypeScript** estrito e tipar funções, estados e props.  
-2. Evitar `any` e variáveis não utilizadas.  
-3. Manter **importações organizadas** e código consistente.  
-4. Escrever **componentes reutilizáveis** e **hooks** sempre que possível.  
-5. Revisar regras do **ESLint** antes de commits.  
-6. Reutilizar componentes e hooks para manter consistência.
-
----
-
-## 📖 Links Úteis
-
-- [React Docs](https://reactjs.org/)  
-- [TypeScript Docs](https://www.typescriptlang.org/)  
-- [Vite Docs](https://vitejs.dev/)  
-- [TailwindCSS Docs](https://tailwindcss.com/)  
-- [Radix UI](https://www.radix-ui.com/)  
-- [Lucide Icons](https://lucide.dev/)  
 
 ## 🚀 Como Baixar e Rodar o Projeto
 
@@ -198,3 +179,23 @@ Antes de enviar código para o repositório, recomenda-se rodar:
 npm run format 
 npm run lint:fix
 ```
+
+## 📌 Boas Práticas Recomendadas
+
+1. Usar **TypeScript** estrito e tipar funções, estados e props.  
+2. Evitar `any` e variáveis não utilizadas.  
+3. Manter **importações organizadas** e código consistente.  
+4. Escrever **componentes reutilizáveis** e **hooks** sempre que possível.  
+5. Revisar regras do **ESLint** antes de commits.  
+6. Reutilizar componentes e hooks para manter consistência.
+
+---
+
+## 📖 Links Úteis
+
+- [React Docs](https://reactjs.org/)  
+- [TypeScript Docs](https://www.typescriptlang.org/)  
+- [Vite Docs](https://vitejs.dev/)  
+- [TailwindCSS Docs](https://tailwindcss.com/)  
+- [Radix UI](https://www.radix-ui.com/)  
+- [Lucide Icons](https://lucide.dev/)  
